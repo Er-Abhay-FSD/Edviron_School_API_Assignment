@@ -1,0 +1,24 @@
+service: edviron-api
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  region: ap-south-1 # Change this to the desired Indian region
+  memorySize: 256
+  timeout: 10
+  profile: Abhay # Use the Abhay AWS CLI profile
+
+functions:
+  getDefaulterList:
+    handler: handler.handler # Adjust the path based on your folder structure
+    events:
+      - http:
+          path: defaulters
+          method: get
+
+plugins:
+  - serverless-offline
+
+custom:
+  serverless-offline:
+    httpPort: 3000 # The port for local testing with serverless-offline

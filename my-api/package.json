@@ -1,0 +1,21 @@
+{
+  "name": "lambdafuntion",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.6.1",
+    "offline": "^0.0.1",
+    "serverless": "^3.35.2"
+  },
+  "devDependencies": {
+    "serverless-offline": "^13.2.0"
+  }
+}
